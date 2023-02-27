@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Me</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: rgb(35, 47, 61);
+		}
+
+		form {
+			max-width: 500px;
+			margin: 20px auto;
+			padding: 20px;
+			border: 1px solid #1c2532;
+			border-radius: 5px;
+			background-color: #dbe6f5;
+		}
+
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 10px;
+			color: #1f2a36;
+		}
+
+		input[type=text],
+		input[type=email],
+		textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+			font-size: 16px;
+			color: #1f2a36;
+			background-color: #f5f5f5;
+		}
+
+		button[type=submit] {
+			background-color: #1f2a36;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+
+		button[type=submit]:hover {
+			background-color: #1c2532;
+		}
+	</style>
+</head>
+<body>
+	<form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Въведете вашето име" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Въведете вашият имейл" required>
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" placeholder="Въведете вашето съобщение" required></textarea>
+
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
